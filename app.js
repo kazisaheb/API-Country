@@ -5,20 +5,19 @@ const createItem = (res) => {
   res.forEach(data => {
     let div = document.createElement("div");
 
-    const currencyObject = data.currencies;
+    const currencyObject = data.currencies ? data.currencies : {};
     const key = Object.keys(currencyObject)[0];
 
     div.innerHTML = `
      <h3> Country: ${data.name.common}</h3>
      <h4>Capital: ${data.capital}</h4>
+     <p>Currencies: ${key ? currencyObject[key].name : 'hello'}</p>
      <p>Region: ${data.region}</p>
-     <p>Area: ${data.area} SQR.KM</p>
+     <p>Area: ${data.area} Sqr.KM</p>
      <p>Population: ${data.population}</p>
-     <p>Currencies: ${key}</p>
      <img src="${data.flags.svg}" alt="">
      <button class="hide">Hide Avobe</button>
     `;
-
     show.append(div)
   })
 }
