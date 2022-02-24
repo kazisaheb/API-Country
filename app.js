@@ -9,12 +9,12 @@ const createItem = (res) => {
     const key = Object.keys(currencyObject)[0];
 
     div.innerHTML = `
-     <h3> Country: ${data.name.common}</h3>
-     <h4>Capital: ${data.capital}</h4>
-     <p>Currencies: ${key ? currencyObject[key].name : 'NoN'}</p>
-     <p>Region: ${data.region}</p>
-     <p>Area: ${data.area} Sqr.KM</p>
-     <p>Population: ${data.population}</p>
+     <h3>Country: ${data.name.common}</h3>
+     <p><b>Capital:</b> ${data.capital}<p>
+     <p><b>Currencies:</b> ${key ? currencyObject[key].name : 'NoN'}</p>
+     <p><b>Region:</b> ${data.region}</p>
+     <p><b>Area:</b> ${data.area} Sqr.KM</p>
+     <p><b>Population:</b> ${data.population}</p>
      <img src="${data.flags.svg}" alt="">
      <button class="hide">Hide Avobe</button>
     `;
