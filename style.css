@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  background-color: gray;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+}
+
+#regions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#regions button {
+  margin: 5px;
+  padding: 8px;
+  border: none;
+  background: #0072ff;
+  font-size: 17px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#regions button:hover {
+  background: #0066e4;
+}
+
+#show {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#show div {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+  margin: 10px;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+img {
+  width: 200px;
+  height: 100px;
+  margin: 10px 0;
+}
+
